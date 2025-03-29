@@ -1,6 +1,10 @@
 public class Peaklass {
     public static void main(String[] args) {
-        int juhuslik = Juhuslik.juhuslikArv();
-        Kontroll.kontrolli(juhuslik);
+        Mangija proov = new Mangija("Proov");
+        Mangijad mangijateKogu = new Mangijad();
+        mangijateKogu.lisaMangija(proov);
+
+        alustaMang.start(0, proov);
+
     }
 }
