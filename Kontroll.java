@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Kontroll {
 
-    public static int kontrolli(int juhuslik, int manguTase) {
-        Scanner arv = new Scanner(System.in);
+    public static int kontrolli(int juhuslik, int manguTase, Scanner arv) {
         int skoor = 1;
         int min = 1;
         int max = 10; // Selleks, et kontrollida kas arv on nõutud vahemikus
@@ -42,7 +41,6 @@ public class Kontroll {
             }
         }
 
-        arv.close();
         return skoor;
 
     }

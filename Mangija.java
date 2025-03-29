@@ -13,6 +13,10 @@ public class Mangija {
         mangijaTulemused.add(tulemus);
     }
 
+    public String getMangijaNimi() {
+        return mangijaNimi;
+    }
+
     // Siia veel parima tulemuse get meetod
 
 }
