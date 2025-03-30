@@ -50,6 +50,7 @@ public class Peaklass {
                 for (Mangija m : mangijateKogu.mangijateKogu) {
                     if (m.getMangijaNimi().equalsIgnoreCase(mangijaNimi)) {
                         mangijaLeitud = true;
+                        System.out.println("Mängija " + mangijaNimi + " skoorid:" );
                         for (List<Integer> tulemus : m.mangijaTulemused) {
                             System.out.println("Mängu tase: " + tulemus.get(0) + " | Skoor: " + tulemus.get(1));
                         }
@@ -70,14 +71,20 @@ public class Peaklass {
 
                 System.out.println("Vali mängija: ");
                 String mangijaNimi = scanner.nextLine();
+                boolean mangijaLeitud = false;
 
                 for (Mangija m : mangijateKogu.mangijateKogu) {
                     if (m.getMangijaNimi().equalsIgnoreCase(mangijaNimi)) {
                         alustaMang.start(tase, m, scanner);
-                        System.out.println("\n");
+                        mangijaLeitud = true;
                         break;
                     }
                 }
+
+                if (!mangijaLeitud) {
+                    System.out.println("Sellise nimega mängijat ei leitud!");
+                }
+                System.out.println("\n");
 
             } else if (valik != 5) {
                 System.out.println("Ebakorrektne valik!");

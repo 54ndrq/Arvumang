@@ -15,14 +15,14 @@ public class alustaMang {
         }
 
         else if (manguTase == 1) { // Tuleb arvata vahemikus [-1,100]
-            System.out.println("Alustasid mängu! Mängija: " + mangija + " | Tase: " + manguTase + "\n");
+            System.out.println("Alustasid mängu! Mängija: " + mangija.mangijaNimi + " | Tase: " + manguTase + "\n");
             int juhuslik = (int) (1 + Math.random() * 100);
             int skoor = Kontroll.kontrolli(juhuslik, manguTase, arv);
             mangija.mangijaTulemused.add(new ArrayList<>(Arrays.asList(manguTase, skoor)));
         }
 
         else if (manguTase == 2) {// Tuleb arvata vahemikus [-1,1000]
-            System.out.println("Alustasid mängu! Mängija: " + mangija + " | Tase: " + manguTase + "\n");
+            System.out.println("Alustasid mängu! Mängija: " + mangija.mangijaNimi + " | Tase: " + manguTase + "\n");
             int juhuslik = (int) (1 + Math.random() * 1000);
             int skoor = Kontroll.kontrolli(juhuslik, manguTase, arv);
             mangija.mangijaTulemused.add(new ArrayList<>(Arrays.asList(manguTase, skoor)));

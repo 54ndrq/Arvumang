@@ -9,10 +9,6 @@ public class Mangija {
         this.mangijaNimi = mangijaNimi;
     }
 
-    public void lisaTulemus(List<Integer> tulemus) {
-        mangijaTulemused.add(tulemus);
-    }
-
     public String getMangijaNimi() {
         return mangijaNimi;
     }
