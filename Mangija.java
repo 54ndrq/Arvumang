@@ -2,8 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Mangija {
-    List<List<Integer>> mangijaTulemused = new ArrayList<List<Integer>>(); // 1 tulemus on arraylist mis sisaldab mängu taset ning selle tulemust, mangijaTulemused sisaldab kõiki tulemusi
-    String mangijaNimi;
+    List<List<Integer>> mangijaTulemused = new ArrayList<>(); // 1 tulemus on arraylist mis sisaldab mängu taset
+    // ning selle tulemust, mangijaTulemused sisaldab kõiki tulemusi
+    private final String mangijaNimi;
 
     public Mangija(String mangijaNimi) {
         this.mangijaNimi = mangijaNimi;
@@ -14,5 +15,4 @@ public class Mangija {
     }
 
     // Siia veel parima tulemuse get meetod
-
 }
