@@ -47,7 +47,9 @@ public class Peaklass {
         int tase = Integer.parseInt(taseS);
 
         System.out.println("Vali mängija: ");
-        kuvaMangijad(mangijateKogu);
+        for (Mangija mangija : mangijateKogu.getMangijateKogu()) {
+            System.out.println(mangija.getMangijaNimi());
+        }
         String mangijaNimi = scanner.nextLine();
         boolean mangijaLeitud = false;
 
